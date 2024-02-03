@@ -10,21 +10,6 @@ public enum Role {
             Set.of(
             new SimpleGrantedAuthority("READ_POSTINGS")
             )
-                    ),
-    POSTER(
-            Set.of(
-            new SimpleGrantedAuthority("READ_POSTINGS"),
-                    new SimpleGrantedAuthority("READ_USERS_APPLIED"),
-                    new SimpleGrantedAuthority("WRITE_POSTINGS")
-            )
-                    ),
-    ADMIN(
-            Set.of(
-            new SimpleGrantedAuthority("READ_POSTINGS"),
-                    new SimpleGrantedAuthority("WRITE_POSTINGS"),
-                    new SimpleGrantedAuthority("READ_USERS_ALL"),
-                    new SimpleGrantedAuthority("WRITE_USERS_ALL")
-            )
                     );
 
 

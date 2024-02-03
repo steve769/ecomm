@@ -39,7 +39,7 @@ public class EcommerceSecurityConfig {
                 .userDetailsService(userDetailsService)
                 .authorizeHttpRequests(authorize ->
                         authorize
-                                .requestMatchers("/api/v1/auth/**")
+                                .requestMatchers("/api/v1/auth/register")
                                 .permitAll()
                                 .anyRequest()
                                 .authenticated()
